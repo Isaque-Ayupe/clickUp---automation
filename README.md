@@ -1,20 +1,32 @@
-🚀 GitHub → ClickUp Automation System
-📌 Pitch Técnico
+# 🚀 GitHub → ClickUp Automation System
+
+## 📌 Pitch Técnico
+
 Este projeto implementa um motor de automação de workflow para times
 de desenvolvimento, integrando GitHub e ClickUp com um backend leve e
 inteligente.
+
 O sistema resolve um problema comum em equipes pequenas:
-Falta de organização do backlog
-Distribuição desigual de tarefas
-Baixa rastreabilidade entre código e gestão
-💡 Solução
-Um agente automatizado que:
-Lê issues do GitHub
-Classifica e interpreta contexto
-Distribui tarefas com base em carga real de trabalho
-Sincroniza execução no ClickUp
+
+- Falta de organização do backlog
+- Distribuição desigual de tarefas
+- Baixa rastreabilidade entre código e gestão
+
 ---
-🧠 Arquitetura
+
+## 💡 Solução
+
+Um agente automatizado que:
+
+- Lê issues do GitHub
+- Classifica e interpreta contexto
+- Distribui tarefas com base em carga real de trabalho
+- Sincroniza execução no ClickUp
+
+---
+
+## 🧠 Arquitetura
+
 ```mermaid
 flowchart TD
     A[GitHub Issues] --> B[Backend Agent]
@@ -22,24 +34,33 @@ flowchart TD
     C --> D[ClickUp Tasks]
     D --> E[Development Team]
 ```
+
 ---
-⚙️ Componentes
-1. GitHub (Source of Truth)
-Issues estruturadas
-Labels como metadados
-2. Backend Agent
-Node.js
-Scheduler (cron)
-Integrações via API
-3. Decision Engine
-Regras determinísticas
-Fallback com IA (LLM)
-4. ClickUp
-Execução das tasks
-Visualização e tracking
+
+## ⚙️ Componentes
+
+**1. GitHub (Source of Truth)**
+- Issues estruturadas
+- Labels como metadados
+
+**2. Backend Agent**
+- Node.js
+- Scheduler (cron)
+- Integrações via API
+
+**3. Decision Engine**
+- Regras determinísticas
+- Fallback com IA (LLM)
+
+**4. ClickUp**
+- Execução das tasks
+- Visualização e tracking
+
 ---
-🧩 Estrutura do Projeto
-``` bash
+
+## 🧩 Estrutura do Projeto
+
+```bash
 /src
   /services
   /core
@@ -47,23 +68,33 @@ Visualização e tracking
   /utils
 index.js
 ```
+
 ---
-🔄 Fluxo de Execução
-Buscar issues abertas
-Filtrar não processadas
-Calcular workload
-Decidir responsável
-Criar task
-Persistir vínculo
+
+## 🔄 Fluxo de Execução
+
+1. Buscar issues abertas
+2. Filtrar não processadas
+3. Calcular workload
+4. Decidir responsável
+5. Criar task
+6. Persistir vínculo
+
 ---
-📊 Estratégia de Distribuição
-Baseada em workload real
-Evita sobrecarga
-Balanceamento automático
+
+## 📊 Estratégia de Distribuição
+
+- Baseada em workload real
+- Evita sobrecarga
+- Balanceamento automático
+
 ---
-🗄️ Persistência
+
+## 🗄️ Persistência
+
 SQLite:
-``` sql
+
+```sql
 tasks (
   issue_id PRIMARY KEY,
   clickup_task_id,
@@ -71,28 +102,41 @@ tasks (
   created_at
 )
 ```
+
 ---
-📈 Diferenciais
-Arquitetura limpa
-Automação real de workflow
-Escalável para times maiores
-Pronto para evolução com IA
+
+## 📈 Diferenciais
+
+- Arquitetura limpa
+- Automação real de workflow
+- Escalável para times maiores
+- Pronto para evolução com IA
+
 ---
-🔮 Evoluções Futuras
-Integração com PRs
-Dashboard de produtividade
-Story points automáticos
-Priorização inteligente
+
+## 🔮 Evoluções Futuras
+
+- Integração com PRs
+- Dashboard de produtividade
+- Story points automáticos
+- Priorização inteligente
+
 ---
-🚀 Como Executar
-``` bash
+
+## 🚀 Como Executar
+
+```bash
 npm install
 node index.js
 ```
+
 ---
-🧠 Conclusão
+
+## 🧠 Conclusão
+
 Este projeto demonstra capacidade de:
-Arquitetar sistemas reais
-Integrar múltiplas APIs
-Aplicar lógica de negócio prática
-Construir automações úteis
+
+- Arquitetar sistemas reais
+- Integrar múltiplas APIs
+- Aplicar lógica de negócio prática
+- Construir automações úteis
