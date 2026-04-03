@@ -1,0 +1,22 @@
+{
+  "name": "github-clickup-automation",
+  "version": "1.0.0",
+  "description": "Motor de automação de workflow: lê issues do GitHub, classifica via IA, e cria tasks no ClickUp com distribuição inteligente de carga.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["github", "clickup", "automation", "workflow", "ai"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "axios": "^1.7.9",
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "octokit": "^4.1.2"
+  }
+}
