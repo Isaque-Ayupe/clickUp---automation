@@ -27,14 +27,11 @@ Um agente automatizado que:
 
 ## 🧠 Arquitetura
 
-```mermaid
 graph TD
     A[GitHub Issues] --> B[Backend Agent]
     B --> C[Decision Engine]
     C --> D[ClickUp Tasks]
     D --> E[Development Team]
-```
-
 ---
 
 ## ⚙️ Componentes
