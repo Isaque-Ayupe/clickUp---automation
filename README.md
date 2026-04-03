@@ -15,7 +15,7 @@ Distribui tarefas com base em carga real de trabalho
 Sincroniza execução no ClickUp
 ---
 🧠 Arquitetura
-``` mermaid
+```mermaid
 flowchart TD
     A[GitHub Issues] --> B[Backend Agent]
     B --> C[Decision Engine]
