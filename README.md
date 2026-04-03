@@ -28,7 +28,7 @@ Um agente automatizado que:
 ## 🧠 Arquitetura
 
 ```mermaid
-flowchart TD
+graph TD
     A[GitHub Issues] --> B[Backend Agent]
     B --> C[Decision Engine]
     C --> D[ClickUp Tasks]
